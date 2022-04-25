@@ -31,7 +31,13 @@ public class SignInActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        SQLiteDatabase db = dbhelper.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("acount", "123456");
+        values.put("password", "cs123456");
+        values.put("qq", "");
+        db.insert("study_list",null, values);
+        values.clear();
         acount_ed = findViewById(R.id.acount);
         password_ed = findViewById(R.id.password);
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -50,8 +56,10 @@ public class SignInActivity extends AppCompatActivity {
                         if(acount_ed.getText().toString().equals(acount_list) == true && password_ed.getText().toString().equals(password_list) == true){
                             flag = 1;
                             break;
-                        }else{
+                        }else if(acount_ed.getText().toString().equals(acount_list) == false && password_ed.getText().toString().equals(password_list) == false) {
                             flag = 2;
+                        }else{
+                            flag = 3;
                         }
                     }
                     if(flag == 1) {
@@ -61,6 +69,16 @@ public class SignInActivity extends AppCompatActivity {
                     }else if(flag == 2) {
                         builder.setTitle("提示");
                         builder.setMessage("请注册帐号");
+                        builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.dismiss();
+                            }
+                        });
+                        builder.show();
+                    }else {
+                        builder.setTitle("提示");
+                        builder.setMessage("密码错误");
                         builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
