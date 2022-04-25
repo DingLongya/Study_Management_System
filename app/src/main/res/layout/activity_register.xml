@@ -54,9 +54,9 @@
                 android:ems="10"
                 android:gravity="center"
                 android:hint="输入帐号"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:maxLength="10"
-                android:textSize="25sp" />
+                android:textSize="25sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -80,8 +80,7 @@
                 android:ems="10"
                 android:gravity="center"
                 android:hint="输入密码"
-                android:inputType="textPersonName"
-                android:maxLength="10"
+                android:inputType="text"
                 android:textSize="25sp" />
         </LinearLayout>
 
@@ -106,8 +105,7 @@
                 android:ems="10"
                 android:gravity="center"
                 android:hint="确认密码"
-                android:inputType="textPersonName"
-                android:maxLength="10"
+                android:inputType="text"
                 android:textSize="25sp" />
         </LinearLayout>
 
@@ -131,8 +129,8 @@
                 android:layout_marginTop="20dp"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="输入邮箱"
-                android:inputType="textEmailAddress"
+                android:hint="输入QQ"
+                android:inputType="number"
                 android:maxLength="10"
                 android:textSize="25sp" />
         </LinearLayout>
@@ -148,6 +146,7 @@
             android:id="@+id/checkbox"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
+            android:checked="false"
             android:layout_marginLeft="130dp"/>
 
         <TextView

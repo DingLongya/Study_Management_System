@@ -36,7 +36,7 @@
             android:ems="10"
             android:gravity="center"
             android:hint="帐号"
-            android:inputType="textPersonName"
+            android:inputType="number"
             android:maxLength="10"
             android:textSize="25sp" />
     </LinearLayout>
@@ -63,13 +63,12 @@
             android:gravity="center"
             android:hint="密码"
             android:inputType="textPassword"
-            android:maxLength="10"
             android:textSize="25sp" />
     </LinearLayout>
 
     <ImageButton
         android:id="@+id/signinButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/button"
         android:layout_gravity="center"
