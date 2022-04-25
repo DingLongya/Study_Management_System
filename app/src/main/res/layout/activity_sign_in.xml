@@ -81,13 +81,12 @@
         android:layout_height="0dp"
         android:layout_weight="1">
 
-        <TextView
+        <Button
             android:id="@+id/signup"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="35dp"
             android:text="新用户注册"
-            android:textStyle="bold"
+            android:background="#00000000"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
