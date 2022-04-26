@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_1"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+        <item
+            android:id="@+id/item_2"
+            android:icon="@mipmap/star"
+            android:title="XXX" />
+        <item
+            android:id="@+id/item_3"
+            android:icon="@mipmap/star"
+            android:title="XXX" />
+        <item
+            android:id="@+id/item_4"
+            android:icon="@mipmap/star"
+            android:title="XXX" />
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Profile">
+
+            <menu>
+
+                <item
+                    android:id="@+id/item_5_1"
+                    android:icon="@drawable/login_icon"
+                    android:title="Login" />
+                <item
+                    android:id="@+id/item_5_2"
+                    android:icon="@drawable/profile_icon"
+                    android:title="Profile" />
+                <item
+                    android:id="@+id/item_5_3"
+                    android:icon="@drawable/home_icon"
+                    android:title="Lohout" />
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="Communicate">
+
+        <menu>
+            <item
+                android:id="@+id/item_6_1"
+                android:title="Share"
+                android:icon="@drawable/share_icon"/>
+            <item
+                android:id="@+id/item_6_2"
+                android:title="Rate Us"
+                android:icon="@drawable/rate_icon"/>
+        </menu>
+    </item>
+</menu>

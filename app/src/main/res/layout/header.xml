@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#7ABD9A"
+    android:gravity="bottom"
+    android:padding="20dp">
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@mipmap/light"
+        android:background="#00000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insisting"
+        android:textSize="24sp"
+        android:fontFamily="@font/aclonica"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学习是一种长久的坚持"
+        android:textSize="16sp"
+        android:fontFamily="@font/baloo"/>
+
+</LinearLayout>
