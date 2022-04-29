@@ -60,4 +60,7 @@
     </string>
     <string name="study">learning</string>
     <string name="tolk">不积硅步 无以至千里</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="send">发送</string>
 </resources>
