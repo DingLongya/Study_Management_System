@@ -34,6 +34,7 @@ public class ChatActivity extends AppCompatActivity implements HttpGetDataListen
             @Override
             public void onClick(View view) {
                 content_str = editText.getText().toString();
+                editText.setText("");
                 ListData listData = new ListData(content_str, ListData.SEND);
                 lists.add(listData);
                 adapter.notifyDataSetChanged();

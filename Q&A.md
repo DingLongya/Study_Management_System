@@ -33,3 +33,7 @@ android{
 ![image-20220429085045709](C:\Users\lenono\AppData\Roaming\Typora\typora-user-images\image-20220429085045709.png)
 
 问题三
+
+**问题：**使用Android Studio自带的模拟器播放声音的时候，播放不出来声音，总是莎莎的电流声。
+
+**问题解决：**下载了mumu模拟器，使用mumu模拟器作为Android Studio的模拟机，解决了声音播放的问题。

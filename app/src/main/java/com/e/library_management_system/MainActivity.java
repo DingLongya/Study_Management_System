@@ -21,10 +21,12 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
-    private CardView chatting;
+    private CardView chatting, music, wait;
 
     public void init() {
         chatting = findViewById(R.id.chatting);
+        music = findViewById(R.id.music);
+        wait = findViewById(R.id.wait);
     }
     public void click() {
         //聊天
@@ -33,6 +35,21 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ChatActivity.class);
                 startActivity(intent);
+            }
+        });
+        //音乐播放
+        music.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MusicActivity.class);
+                startActivity(intent);
+            }
+        });
+        //待办
+        wait.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
             }
         });
     }

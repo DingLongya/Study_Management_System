@@ -1,10 +1,26 @@
+### APP介绍
+
+《志用》多功能应用型app
+
+**APP展示：**
+
+
+
+### 功能介绍
+
 #### 智能聊天机器人功能的实现
 
-图灵机器人官网： http://www.turingapi.com/
+- 参考B站UP主 [SH先生的技术宅](https://space.bilibili.com/473449170)
 
-#### 步骤
+**效果展示：**
 
-1. 异步请求数据
-2. json数据解析
-3. 数据封装
-4. 布局设计
+![](/image/chatting.png)
+
+#### 音乐播放器功能实现
+
+- 参考B站UP主 [叫醒耳朵WakeUp](https://space.bilibili.com/521303536)
+
+**效果展示**
+
+![](/image/music.png)
+

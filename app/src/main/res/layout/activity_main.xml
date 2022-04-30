@@ -105,7 +105,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/baloo"
-                            android:text="chatting"
+                            android:text="聊天"
                             android:textSize="24sp" />
 
                         <ImageView
@@ -138,7 +138,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/baloo"
-                            android:text="looking"
+                            android:text="专注计时"
                             android:textSize="24sp" />
 
                         <ImageView
@@ -167,6 +167,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
+                    android:id="@+id/wait"
                     app:cardElevation="10dp">
 
                     <RelativeLayout
@@ -182,7 +183,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/baloo"
-                            android:text="notepad"
+                            android:text="待办"
                             android:textSize="24sp" />
 
                         <ImageView
@@ -197,6 +198,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
+                    android:id="@+id/music"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
@@ -215,7 +217,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/baloo"
-                            android:text="music"
+                            android:text="音乐"
                             android:textSize="24sp" />
 
                         <ImageView
