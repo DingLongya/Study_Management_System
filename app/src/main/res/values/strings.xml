@@ -64,4 +64,5 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="send">发送</string>
     <string name="score">score：</string>
+    <string name="clear">清理画布</string>
 </resources>

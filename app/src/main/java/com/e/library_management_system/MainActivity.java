@@ -50,11 +50,12 @@ public class MainActivity<myClick> extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        //待办
+        //画板
         wait.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(MainActivity.this, PointActivity.class);
+                startActivity(intent);
             }
         });
         //2048

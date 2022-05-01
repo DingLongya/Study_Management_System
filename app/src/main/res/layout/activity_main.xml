@@ -183,7 +183,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/baloo"
-                            android:text="待办"
+                            android:text="画板"
                             android:textSize="24sp" />
 
                         <ImageView

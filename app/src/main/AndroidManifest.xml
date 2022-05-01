@@ -14,11 +14,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GameActivity"
+        <activity android:name=".PointActivity"
+            android:label=""
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".GameActivity"
             android:label=""
             android:launchMode="singleTask"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".MusicActivity"
             android:label=""
