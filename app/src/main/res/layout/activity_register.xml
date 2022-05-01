@@ -150,7 +150,7 @@
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:layout_marginLeft="115dp"/>
+            android:layout_marginLeft="160dp"/>
 
         <TextView
             android:id="@+id/warning"

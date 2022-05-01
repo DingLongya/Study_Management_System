@@ -8,7 +8,7 @@
     tools:context=".MainActivity"
     android:filterTouchesWhenObscured="true"
     android:fitsSystemWindows="true"
-    tools:openDrawer="">
+    tools:openDrawer="start">
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
@@ -44,8 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:fontFamily="@font/gloria_hallelujah"
-                android:text="@string/study"
+                android:text="《志用》"
                 android:textSize="36sp"
                 app:layout_constraintEnd_toStartOf="@+id/imageView2"
                 app:layout_constraintStart_toStartOf="parent"
@@ -119,6 +118,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/game"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
@@ -138,7 +138,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/baloo"
-                            android:text="专注计时"
+                            android:text="2048"
                             android:textSize="24sp" />
 
                         <ImageView
@@ -147,7 +147,7 @@
                             android:layout_height="75dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="15dp"
-                            app:srcCompat="@mipmap/look" />
+                            app:srcCompat="@mipmap/star" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -231,159 +231,160 @@
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/L3"
-                android:layout_width="0dp"
-                android:layout_height="175dp"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/L2">
+<!--            时间有限 后续开发-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/L3"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="175dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:padding="10dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/L2">-->
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    app:cardElevation="10dp">
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:cardElevation="10dp">-->
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#C3E2D3">
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#C3E2D3">-->
 
-                        <TextView
-                            android:id="@+id/textView9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/imageView8"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/baloo"
-                            android:text="time"
-                            android:textSize="24sp" />
+<!--                        <TextView-->
+<!--                            android:id="@+id/textView9"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@id/imageView8"-->
+<!--                            android:layout_centerHorizontal="true"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:fontFamily="@font/baloo"-->
+<!--                            android:text="time"-->
+<!--                            android:textSize="24sp" />-->
 
-                        <ImageView
-                            android:id="@+id/imageView8"
-                            android:layout_width="75dp"
-                            android:layout_height="75dp"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="15dp"
-                            app:srcCompat="@mipmap/time" />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
+<!--                        <ImageView-->
+<!--                            android:id="@+id/imageView8"-->
+<!--                            android:layout_width="75dp"-->
+<!--                            android:layout_height="75dp"-->
+<!--                            android:layout_centerHorizontal="true"-->
+<!--                            android:layout_marginTop="15dp"-->
+<!--                            app:srcCompat="@mipmap/time" />-->
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    app:cardElevation="10dp">
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:cardElevation="10dp">-->
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#C3E2D3">
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#C3E2D3">-->
 
-                        <TextView
-                            android:id="@+id/textView10"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/imageView9"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/baloo"
-                            android:text="clock"
-                            android:textSize="24sp" />
+<!--                        <TextView-->
+<!--                            android:id="@+id/textView10"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@id/imageView9"-->
+<!--                            android:layout_centerHorizontal="true"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:fontFamily="@font/baloo"-->
+<!--                            android:text="clock"-->
+<!--                            android:textSize="24sp" />-->
 
-                        <ImageView
-                            android:id="@+id/imageView9"
-                            android:layout_width="75dp"
-                            android:layout_height="75dp"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="15dp"
-                            app:srcCompat="@mipmap/limit" />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
+<!--                        <ImageView-->
+<!--                            android:id="@+id/imageView9"-->
+<!--                            android:layout_width="75dp"-->
+<!--                            android:layout_height="75dp"-->
+<!--                            android:layout_centerHorizontal="true"-->
+<!--                            android:layout_marginTop="15dp"-->
+<!--                            app:srcCompat="@mipmap/limit" />-->
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+<!--            </LinearLayout>-->
 
-            <LinearLayout
-                android:id="@+id/L4"
-                android:layout_width="0dp"
-                android:layout_height="175dp"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/L3">
+<!--            <LinearLayout-->
+<!--                android:id="@+id/L4"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="175dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:padding="10dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/L3">-->
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    app:cardElevation="10dp">
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:cardElevation="10dp">-->
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#C3E2D3">
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#C3E2D3">-->
 
-                        <TextView
-                            android:id="@+id/textView11"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/imageView10"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/baloo"
-                            android:text="chatting"
-                            android:textSize="24sp" />
+<!--                        <TextView-->
+<!--                            android:id="@+id/textView11"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@id/imageView10"-->
+<!--                            android:layout_centerHorizontal="true"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:fontFamily="@font/baloo"-->
+<!--                            android:text="chatting"-->
+<!--                            android:textSize="24sp" />-->
 
-                        <ImageView
-                            android:id="@+id/imageView10"
-                            android:layout_width="75dp"
-                            android:layout_height="75dp"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="15dp"
-                            app:srcCompat="@mipmap/hot" />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
+<!--                        <ImageView-->
+<!--                            android:id="@+id/imageView10"-->
+<!--                            android:layout_width="75dp"-->
+<!--                            android:layout_height="75dp"-->
+<!--                            android:layout_centerHorizontal="true"-->
+<!--                            android:layout_marginTop="15dp"-->
+<!--                            app:srcCompat="@mipmap/hot" />-->
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    app:cardElevation="10dp">
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:cardElevation="10dp">-->
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#C3E2D3">
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#C3E2D3">-->
 
-                        <TextView
-                            android:id="@+id/textView12"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/imageView11"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/baloo"
-                            android:text="XXX"
-                            android:textSize="24sp" />
+<!--                        <TextView-->
+<!--                            android:id="@+id/textView12"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@id/imageView11"-->
+<!--                            android:layout_centerHorizontal="true"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:fontFamily="@font/baloo"-->
+<!--                            android:text="XXX"-->
+<!--                            android:textSize="24sp" />-->
 
-                        <ImageView
-                            android:id="@+id/imageView11"
-                            android:layout_width="75dp"
-                            android:layout_height="75dp"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="15dp"
-                            app:srcCompat="@mipmap/star" />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
+<!--                        <ImageView-->
+<!--                            android:id="@+id/imageView11"-->
+<!--                            android:layout_width="75dp"-->
+<!--                            android:layout_height="75dp"-->
+<!--                            android:layout_centerHorizontal="true"-->
+<!--                            android:layout_marginTop="15dp"-->
+<!--                            app:srcCompat="@mipmap/star" />-->
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+<!--            </LinearLayout>-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

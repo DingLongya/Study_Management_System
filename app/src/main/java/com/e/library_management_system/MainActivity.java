@@ -6,27 +6,32 @@ import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.ClipData;
 import android.content.Intent;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends AppCompatActivity {
+import java.security.acl.Group;
+
+public class MainActivity<myClick> extends AppCompatActivity {
 
     //Variables
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
-    private CardView chatting, music, wait;
+    private CardView chatting, music, wait, game;
 
     public void init() {
         chatting = findViewById(R.id.chatting);
         music = findViewById(R.id.music);
         wait = findViewById(R.id.wait);
+        game = findViewById(R.id.game);
     }
     public void click() {
         //聊天
@@ -52,6 +57,15 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        //2048
+        game.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, GameActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,5 +85,4 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
     }
-
 }
