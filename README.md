@@ -40,3 +40,14 @@
 
 ![](/image/paint.jpg)
 
+#### 工具箱功能实现
+
+##### 计算器
+
+**效果展示：**
+
+![](/image/jisuanqi.jpg)
+
+##### 计时器
+
+![](/image/jishiqi.jpg)

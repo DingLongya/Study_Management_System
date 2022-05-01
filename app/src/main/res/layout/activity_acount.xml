@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C3E2D3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:id="@+id/jisuanqi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="计算器"
+                    android:layout_weight="1"
+                    android:background="#f2e6ce"
+                    android:onClick="MyClick"/>
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/jishiqi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="计时器"
+                    android:layout_weight="1"
+                    android:background="#f2e6ce"
+                    android:onClick="MyClick"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/licheng"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="里程器"
+                    android:background="#f2e6ce"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/erweima"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="二维码生成"
+                    android:layout_marginLeft="10dp"
+                    android:background="#f2e6ce"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:background="#7ABD9A"
-    android:gravity="bottom"
-    android:padding="20dp">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="坚持"
-        android:textSize="24sp"
-        android:fontFamily="@font/aclonica"
-        android:layout_marginBottom="10dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="学习是一种长久的坚持"
-        android:textSize="16sp"
-        android:fontFamily="@font/baloo"
-        android:layout_marginBottom="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7ABD9A"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="坚持"
+            android:textSize="24sp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/aclonica"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学习是一种长久的坚持"
+            android:textSize="16sp"
+            android:fontFamily="@font/baloo"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
 
 </LinearLayout>
