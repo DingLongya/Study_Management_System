@@ -35,13 +35,15 @@ public class ToolsActivity extends AppCompatActivity {
         licheng.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //跳转
+                Intent intent = new Intent(ToolsActivity.this, KmActivity.class);
+                startActivity(intent);
             }
         });
         erweima.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //跳转
+                Intent intent = new Intent(ToolsActivity.this, QrcodeActivity.class);
+                startActivity(intent);
             }
         });
     }

@@ -45,7 +45,7 @@ public class ChatActivity extends AppCompatActivity implements HttpGetDataListen
 
     public void http() {
         httpDate = (HttpDate) new HttpDate(
-                "http://www.tuling123.com/openapi/api?key=94a85202322644118c73f1b2e7178c4d&info="
+                "http://www.tuling123.com/openapi/api?key=这里写入自己的key&info="
                         + content_str, this).execute();
     }
     @Override
